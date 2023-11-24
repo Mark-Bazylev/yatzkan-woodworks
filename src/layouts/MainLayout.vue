@@ -1,14 +1,27 @@
 <template>
   <q-layout view="lHr Lpr lFr">
     Hello
-  <q-header>Hi</q-header>
-    <q-drawer>ya</q-drawer>
-    <q-page-container>
-      <q-page>
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi dolore eaque quidem sit. Architecto dolor doloribus esse et ex explicabo impedit maiores sunt tempora voluptas? Excepturi in minima molestiae?</h1>
-      </q-page>
+    <q-header>
+      <q-toolbar>
+        <q-avatar>
+          <img src="" alt="logo" />
+        </q-avatar>
+
+        <q-toolbar-title class="row justify-center">
+          Yatzkan Woodworks
+        </q-toolbar-title>
+
+        <q-btn flat no-caps label="Shop" />
+        <q-btn flat no-caps label="About" />
+        <q-btn flat no-caps label="Contact" />
+      </q-toolbar>
+    </q-header>
+    <q-page-container class="page-container" style="padding: 0">
+      <router-view />
     </q-page-container>
     <q-footer>footer</q-footer>
-
   </q-layout>
 </template>
+<script setup lang="ts"></script>
+
+<style scoped></style>
